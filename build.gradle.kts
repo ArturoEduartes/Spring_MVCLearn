@@ -51,8 +51,8 @@ ktlint {
     outputColorName.set("RED")
     ignoreFailures.set(false)
     enableExperimentalRules.set(false)
-    // disabledRules.set(setOf("final-newline", "import-ordering", "indent",
-    //        "parameter-list-wrapping", "chain-wrapping"))
+    disabledRules.set(setOf("final-newline", "indent",
+        "parameter-list-wrapping"))
     // End Add
     reporters {
         // reporter(ReporterType.CHECKSTYLE)|
