@@ -1,0 +1,23 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>"Mi primer Pagina With ThymeLeaf</title>
+</head>
+
+
+<body>
+<h1> Welcome to the World of Spring Web Application</h1>
+<!--
+<div th:if="${variable1}">
+    <h2 th:text="${variable1}"/>
+</div>
+-->
+<div th:if="${variable1}">
+    <ul>
+        <li th:each="file : ${variable1}">
+            <h2 th:text="${file}"/>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

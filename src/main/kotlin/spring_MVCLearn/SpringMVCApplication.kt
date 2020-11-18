@@ -5,6 +5,7 @@ package spring_MVCLearn
 
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 
@@ -12,11 +13,12 @@ import org.springframework.context.annotation.Bean
  * @author Arturo
  */
 @SpringBootApplication
+@EnableConfigurationProperties(ConfiguratorProperties::class)
 class SpringMVCApplication {
-    val greeting: String
-        get() {
+    val greeting: String = "Hello Spring World!"
+        /*get() {
             return "Hello world."
-        }
+        }*/
     @Bean
     fun init(): CommandLineRunner {
         return CommandLineRunner { args: Array<String?>? ->

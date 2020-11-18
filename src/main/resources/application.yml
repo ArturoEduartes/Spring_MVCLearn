@@ -1,0 +1,12 @@
+datos:
+  twitter: ArquitectoJava
+  web: ArquitecturaJava.com
+  lista:
+    - Marilza
+    - Matheus
+    - Arturo
+    - Lina
+    - Oliver
+spring:
+  thymeleaf:
+    cache: false

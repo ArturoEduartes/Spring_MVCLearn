@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class myWebAppVersion {
     @Bean
-    fun webAppVersion():String{
+    fun webAppVersion(): String {
         return "1.0.0"
     }
 }
