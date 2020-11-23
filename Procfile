@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar build/libs/Spring_MVCLearn-1.0-SNAPSHOT.jar
